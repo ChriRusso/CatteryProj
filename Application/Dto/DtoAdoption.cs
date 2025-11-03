@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 
 namespace Application.Dto
 {
-    public record class DtoAdoption
-    {
-        Cat Cat;
-        Adopter Adopter;
-        DateOnly date;
-    }
+    public record class DtoAdoption(
+        DtoCat Cat,
+        Adopter Adopter,
+        DateOnly date
+        );
+    
+        
+    
 }

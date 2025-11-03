@@ -10,7 +10,8 @@ namespace Domain.Model.Entities
 {
     public enum Sex
     {
-        Male,Female
+        Male,
+        Female
     }
     public class Cat
     {

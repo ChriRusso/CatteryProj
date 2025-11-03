@@ -7,16 +7,15 @@ using Domain.Model.Entities;
 namespace Application.Dto
 {
     public record class DtoCat
-    {
-        string Name;
-        string Race;
-        Sex Sex;
-        string Description;
-        DateOnly? birth;
-        DateOnly arrived;
-        DateOnly? left;
-        string? catImage;
-        List<Adoption> cats;
-
-    }
+    (
+        string Name,
+        string Race,
+        Sex Sex,
+        string Description,
+        DateOnly? birth,
+        DateOnly arrived,
+        DateOnly? left,
+        string? catImage,
+        string cui
+    );
 }
