@@ -5,8 +5,8 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using src.Application.Mappers;
-using src.Application.Dto;
+using Application.Mappers;
+using Application.Dto;
 namespace DomainTest
 {
     public class Class1
@@ -25,4 +25,5 @@ namespace DomainTest
             Assert.ThrowsException<ArgumentNullException>(() => nullEntity!.ToDto());
         }
     }
+
 }

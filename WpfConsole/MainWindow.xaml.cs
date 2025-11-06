@@ -20,5 +20,26 @@ namespace WpfConsole
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close(); 
+        AggiungiGatto aggiungiGattoWindow = new AggiungiGatto();
+            aggiungiGattoWindow.Show();
+        }
+
+        private void MenuGatto_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            AggiungiGatto aggiungiGattoWindow = new AggiungiGatto();
+            aggiungiGattoWindow.Show();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            MenuAdottanti menuAdottantiWindow = new MenuAdottanti();
+            menuAdottantiWindow.Show();
+        }
     }
 }

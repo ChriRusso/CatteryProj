@@ -6,7 +6,17 @@
         xmlns:local="clr-namespace:WpfConsole"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+        
+    <Grid Background="#FF6DD4C8">
+        <ListView d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,80,564,166">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name ="AggGatto" Content="Aggiungi gatto" HorizontalAlignment="Left" Margin="547,253,0,0" VerticalAlignment="Top" Height="117" Width="143" Click="Button_Click" Background="#FFE2C2DF"/>
+        <Button x:Name="MenuGatto" Content="Menu gatto" HorizontalAlignment="Center" Margin="0,253,0,0" VerticalAlignment="Top" Height="117" Width="144"  Background="#FFE2C2DF" Click="MenuGatto_Click"/>
+        <Button Content="Aggiungi adottanti" HorizontalAlignment="Left" Margin="434,100,0,0" VerticalAlignment="Top" Height="117" Width="144"  Background="#FFE2C2DF" Click="Button_Click_1"/>
     </Grid>
 </Window>
