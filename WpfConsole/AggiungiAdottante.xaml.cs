@@ -16,21 +16,21 @@ using Domain.Model.Entities;
 namespace WpfConsole
 {
     /// <summary>
-    /// Logica di interazione per AggiungiGatto.xaml
+    /// Logica di interazione per AggiungiAdottante.xaml
     /// </summary>
-    public partial class AggiungiGatto : Window
+    public partial class AggiungiAdottante : Window
     {
-        CatService CatService;
-        Cat cat;
-        public AggiungiGatto()
+        Adopter adopter;
+        AdoptionService AdopterService;
+        public AggiungiAdottante()
         {
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-             cat = new(nome.Text,cognome.Text, Enum.Parse(sesso.Text),desc.Text,nascita,arrivo,uscita,null);
-            CatService.AddCat(cat);
+            adopter= new(nome.Text, cognome.Text, Enum.Parse(sesso.Text), indirizzo.Text, telefono.Text, email.Text);
+            AdopterService.AddAdopter(adopter);
         }
     }
 }

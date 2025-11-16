@@ -8,8 +8,6 @@
         Title="GestioneGatto" Height="450" Width="800">
     <Grid Background="#FF6DD4C8">
         <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,565,246"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,53,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBlock HorizontalAlignment="Left" Margin="340,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="51" Width="79"><Run Language="it-it" Text="ID per cercare"/></TextBlock>
         <Button Content="Elimina" HorizontalAlignment="Left" Margin="270,284,0,0" VerticalAlignment="Top" Height="74" Width="130"/>
         <Button Content="Adotta gatto" HorizontalAlignment="Left" Margin="460,284,0,0" VerticalAlignment="Top" Height="74" Width="130"/>
         <Button Content="Modificare gatto" HorizontalAlignment="Left" Margin="368,0,0,0" VerticalAlignment="Center" Height="74" Width="130"/>

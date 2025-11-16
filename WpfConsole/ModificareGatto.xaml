@@ -22,7 +22,7 @@
         <TextBlock HorizontalAlignment="Left" Margin="41,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="it-it" Text="Arrivo"/></TextBlock>
         <Calendar HorizontalAlignment="Left" Margin="221,186,0,0" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="226,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="it-it" Text="Uscita"/></TextBlock>
-        <Button Content="Conferma" HorizontalAlignment="Left" Margin="528,267,0,0" VerticalAlignment="Top" Height="87" Width="154"/>
+        <Button Content="Conferma" HorizontalAlignment="Left" Margin="528,267,0,0" VerticalAlignment="Top" Height="87" Width="154" Click="Button_Click"/>
         <Label Content="Modificare dati del gatto, reinserire tutto" HorizontalAlignment="Left" Margin="0,-3,0,0" VerticalAlignment="Top" Width="790"/>
     </Grid>
 </Window>

@@ -13,6 +13,7 @@ namespace Application.UseCases
     {
         IModelRepository<Cat> _catRepo;
         IModelRepository<Adoption> _adoptionRepo;
+        IModelRepository<Adopter> _adopterRepo;
         public AdoptionService(IModelRepository<Cat> catRepo, IModelRepository<Adoption> adoptionRepo)
         {
             _catRepo = catRepo;
@@ -28,11 +29,11 @@ namespace Application.UseCases
         }
         private void RemoveCat(Cat cat)
         {
-            _catRepo.RemoveFromRepo(cat);//da configurare sul repository in infrastructure
+            _catRepo.RemoveFromRepo(cat);
         }
         public void RefundCat(Cat cat, DateOnly refundDate)
         {
-            //i need to  search for the cat  in  the adoptionList.
+          
             Adoption adoption = SearchAdoptionByCat(cat);
             adoption.AdoptionCat.Description += $"Adoption Failed: Started on: {adoption.AdoptionDate} and ended on: {refundDate}";
             adoption.AdoptionCat.LeftCattery = null;
@@ -50,6 +51,10 @@ namespace Application.UseCases
                 }
             }
             throw new ArgumentException("Cat not found on the cattery list");
+        }
+        public void AddAdopter(Adopter adopter)
+        {
+            _adopterRepo.AddToRepo(adopter);
         }
     }
 }
