@@ -9,7 +9,7 @@ namespace Application.Dto
     public record class DtoAdopter(
         string Name,
         string Surname,
-        string Address,
+        Address Address,
         string PhoneNumber,
         string FiscalCode
         );

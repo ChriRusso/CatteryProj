@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Application.UseCases;
 using Domain.Model.Entities;
+using Domain.Model.ValueObject;
 namespace WpfConsole
 {
     /// <summary>

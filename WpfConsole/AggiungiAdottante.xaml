@@ -7,18 +7,20 @@
         mc:Ignorable="d"
         Title="AggiungiAdottante" Height="450" Width="800">
     <Grid Background="#FF6DD4C8">
-        <TextBox HorizontalAlignment="Left" Margin="10,87,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104" Height="68"/>
-        <TextBox HorizontalAlignment="Left" Margin="215,87,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104" Height="68" RenderTransformOrigin="0.584,0.499"/>
-        <TextBox HorizontalAlignment="Left" Margin="446,87,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104" Height="68"/>
-        <TextBox HorizontalAlignment="Left" Margin="655,87,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104" Height="68"/>
-        <TextBox HorizontalAlignment="Left" Margin="10,246,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104" Height="68"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="101" FontSize="19"><Run Language="it-it" Text="name"/></TextBlock>
+        <TextBox x:Name="nome" HorizontalAlignment="Left" Margin="10,87,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104" Height="68"/>
+        <TextBox x:Name="cognome" HorizontalAlignment="Left" Margin="215,87,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104" Height="68" RenderTransformOrigin="0.584,0.499"/>
+        <TextBox x:Name="indirizzo" HorizontalAlignment="Left" Margin="446,87,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104" Height="68"/>
+        <TextBox x:Name="telefono" HorizontalAlignment="Left" Margin="655,87,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104" Height="68"/>
+        <TextBox x:Name="fiscale" HorizontalAlignment="Left" Margin="10,246,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104" Height="68"/>
+        <TextBlock  HorizontalAlignment="Left" Margin="10,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="101" FontSize="19"><Run Language="it-it" Text="name"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="216,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="102" FontSize="19"><Run Background="White" Foreground="Blue" FontSize="12.666666666666666" Text="Surname"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="-188,-99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="101" FontSize="19"><Run Language="it-it" Text="name"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="655,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="101" FontSize="19"><Run Language="it-it" Text="phone"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="446,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="101" FontSize="19"><Run Language="it-it" Text="Adress"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="13,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="101" FontSize="19"><Run Language="it-it" Text="Cod fiscal"/></TextBlock>
         <Button Content="conferma" HorizontalAlignment="Left" Margin="279,246,0,0" VerticalAlignment="Top" Height="90" Width="157" Click="Button_Click"/>
+        <TextBox x:Name="email" HorizontalAlignment="Left" Margin="147,247,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104" Height="68"/>
+        <TextBlock HorizontalAlignment="Left" Margin="147,211,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="101" FontSize="19"><Run Language="it-it" Text="email"/></TextBlock>
 
     </Grid>
 </Window>

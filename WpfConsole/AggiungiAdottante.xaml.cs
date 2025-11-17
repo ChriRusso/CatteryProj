@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Application.UseCases;
 using Domain.Model.Entities;
+using Domain.Model.ValueObject;
 namespace WpfConsole
 {
     /// <summary>
@@ -29,7 +30,7 @@ namespace WpfConsole
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            adopter= new(nome.Text, cognome.Text, Enum.Parse(sesso.Text), indirizzo.Text, telefono.Text, email.Text);
+            adopter= new(nome.Text, cognome.Text,new Address(indirizzo.Text), telefono.Text, email.Text);
             AdopterService.AddAdopter(adopter);
         }
     }

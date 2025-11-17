@@ -38,8 +38,7 @@ namespace WpfConsole
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             this.Close();
-            MenuAdottanti menuAdottantiWindow = new MenuAdottanti();
-            menuAdottantiWindow.Show();
+           
         }
     }
 }
